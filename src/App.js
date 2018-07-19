@@ -10,7 +10,6 @@ export default class App extends Component {
   };
 
   handleChange = markdown => {
-    console.log(this.state);
     this.setState({ markdown });
   };
 
