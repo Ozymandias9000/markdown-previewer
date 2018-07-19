@@ -8,13 +8,16 @@
     "react-dom": "^16.4.1",
     "react-scripts": "1.1.4"
   },
+  "homepage": "https://Ozymandias9000.github.io/markdown-previewer",
   "scripts": {
     "build-css": "stylus -c src/static/stylus/ --out src/static/css",
     "watch-css": "npm run build-css && stylus -c -w src/static/stylus/ --out src/static/css",
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
     "build-js": "react-scripts build",
-    "build": "npm-run-all build-css build-js"
+    "build": "npm-run-all build-css build-js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "npm-run-all": "^4.1.3"
