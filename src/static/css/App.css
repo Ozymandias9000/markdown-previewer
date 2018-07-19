@@ -1,1 +1,1 @@
-:root{font-size:22px}main{display:flex;flex-direction:column}#editor{height:300px;width:400px}
+:root{font-size:22px}body{padding:20px}main{display:flex;flex-direction:column}#editor{height:300px;width:400px}#preview{border:1px solid #808080;height:300px;width:400px}
